@@ -10,7 +10,8 @@ struct Pessoa{
 };
 
 int criaPastaUsuario(char* CPF);
-void armazenaPessoa(struct Pessoa pessoa);
+void armazenaCategoria(GtkTextBuffer* buffer, char* CPF);
+void armazenaPessoa(struct Pessoa pessoa, GtkWidget* windowForm);
 void definePessoa(GtkWidget *btn, struct dadosCad* dados);
 
 #endif /* FUNCSCADASTRO_H */

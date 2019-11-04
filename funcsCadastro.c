@@ -5,6 +5,9 @@
 #include "GTKformAbas.h"
 #define MAX 100
 
+/*=================================================================================
+		              VARIÁVEIS GLOBAIS
+==================================================================================*/
 int err;
 
 //Struct para armazenar os dados recebidos dos campos
@@ -15,11 +18,12 @@ struct Pessoa{
     double Saldo;
 };
 
-
+//cria a pasta do usuário
 int criaPastaUsuario(char* CPF){
 	return mkdir(CPF);
 }
 
+//armazena os arquivos de categoria do usuário
 void armazenaCategoria(GtkTextBuffer* buffer, char* CPF){
     
     //Variáveis para o recolhimento dos dados informados no textarea de categorias
@@ -57,6 +61,7 @@ void armazenaCategoria(GtkTextBuffer* buffer, char* CPF){
     
 }
 
+//armazena todas as informações do usuário (nome, senha, saldo)
 void armazenaPessoa(struct Pessoa pessoa, GtkWidget* windowForm){
     //Janela de aviso para informar ao usuário se o cadastro foi concluído ou se houve algum erro
     GtkWidget *janelaAviso;
@@ -108,7 +113,7 @@ void armazenaPessoa(struct Pessoa pessoa, GtkWidget* windowForm){
           
 }
 
-
+//define os atributos do struct pessoa através dos valores informados pelo usuário
 void definePessoa(GtkWidget *btn, struct dadosCad* dados) {
     
     //Struct para armazenar os dados recebidos dos campos
@@ -126,9 +131,5 @@ void definePessoa(GtkWidget *btn, struct dadosCad* dados) {
     
     //Função para cadastrar as categorias
     armazenaCategoria(dados->buffer, pessoa.CPF);
-    
-
-
-    
     
 }
