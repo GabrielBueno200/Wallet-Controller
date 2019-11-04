@@ -1,13 +1,13 @@
 .bgUser{
-	background: url("background.png");
+	background: url("images/background.png");
 }
 
 .bgSobreNos{
-	background: url("background2.png");
+	background: url("images/background2.png");
 }
 
 .bgTransacoes{
-	background: url("background3.png");
+	background: url("images/background3.png");
 }
 
 .labelUser{
@@ -18,21 +18,30 @@
 
 .btnEdita{
 	border-radius: 10px;
-		background-image:  -gtk-gradient (linear,
-             left top,
-             left bottom,
-             color-stop(0.0,rgba(34,97,170,1)),
-             color-stop(0.50,rgba(56,145,218,1)),
-             color-stop(0.51,rgba(34,131,216,1)),
-             color-stop(1.00,rgba(134,191,234,1)));
-	background: url("pencil.png");
+	background: url("images/pencil.png");
 
+}
+
+.btnDelAcc{
+	font-weight: bolder;
+	color: #FFF;
+	background-image: linear-gradient(to bottom right, #800000, #4d0000)
+
+}
+
+.btnLogout{
+	font-weight: bolder;
+	color: #FFF;
+	background-image: linear-gradient(to bottom right, #ff4d4d, #ff0000)
 }
 
 .labelData{
-	font-size: 20px;
+	font-size: 16px;
 }
 
+.labelCategoria{
+	font-size: 20px;
+}
 
 .inputUser{
 	box-shadow: 0px 2px 2px black;
@@ -48,7 +57,7 @@
 }
 
 .labelDesenvolvedores{
-	color: #FFF;
+	color: #d6d6c2;
 	font-size: 30px;
 	font-weight: bolder;
 	text-shadow: #000 1px 1px, #000 2px 2px;
