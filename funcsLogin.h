@@ -6,6 +6,7 @@ struct usuarioLogado{
     int logged_in;
     char Nome[MAX];
     char CPF[MAX]; 
+    char Senha[MAX];
     double Saldo;
     struct CategoriasUsuario* Categoria;
 };
@@ -14,8 +15,8 @@ struct CategoriasUsuario{
     char Nome[MAX];
 };
 
+void removeQuebra(char* str);
 void defineUsuarioLogado(char* postCpf, char* fileNomeUsuario, double fileSaldo);
-void mensagemAviso(GtkWidget* windowForm, gchar* mensagem);
 int buscaPorCPF(GtkWidget* windowForm, FILE** arquivoUsuario, char* enderecoArquivo, char* postCpf);
 void validaLogin(GtkWidget *btn, struct dadosLogin* dados);
 
