@@ -22,3 +22,6 @@ Visualização dos dados pessoais cadastrados e relatórios (mensal e anual)
 ## Relatórios
 ![prt6](https://user-images.githubusercontent.com/56837996/89851098-12635880-db62-11ea-9009-398c6b8f85d3.JPG)
 ![prt7](https://user-images.githubusercontent.com/56837996/89851184-3fb00680-db62-11ea-88bd-eb7a9ede9f9e.JPG)
+
+
+**Este projeto foi um dos temas avaliativos da disciplina de Desenvolvimento de Algoritmos**
