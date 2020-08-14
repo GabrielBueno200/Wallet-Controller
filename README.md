@@ -1,7 +1,7 @@
 # Gerenciador de carteira pessoal
 
 O programa consiste num gerenciador de carteira em que o usuário pode se cadastrar e inserir todas as suas transações financeiras (gastos ou receitas)  
-**Obs: ** É necessária a instalação da biblioteca GTK3 para a execução do projeto.
+**Obs:  É necessária a instalação da biblioteca GTK3 para a execução do projeto. **
 
 ## Telas de cadastro e login:
 ![prt1](https://user-images.githubusercontent.com/56837996/89849803-a97ae100-db5f-11ea-9455-060b43d35250.JPG)
